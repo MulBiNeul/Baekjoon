@@ -1,0 +1,9 @@
+import sys
+
+n = int(sys.stdin.readline().strip())
+number = sys.stdin.readline().strip()
+
+# 각 자리 숫자를 정수로 변환 후 더하기
+result = sum(map(int, number))
+
+print(result)

@@ -1,0 +1,13 @@
+import sys
+
+cnt = int(sys.stdin.readline())
+list = []
+
+for _ in range(cnt):
+    [a, b] = map(int, sys.stdin.readline().split())
+    list.append([a, b])
+
+list.sort()
+
+for i in range(cnt):
+    print(list[i][0], list[i][1])

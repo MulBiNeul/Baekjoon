@@ -1,0 +1,12 @@
+import sys
+
+num = int(sys.stdin.readline())
+
+words = [sys.stdin.readline().strip() for _ in range(num)]
+
+words = list(set(words))
+words.sort()
+words.sort(key=len)
+
+for i in words:
+    print(i)

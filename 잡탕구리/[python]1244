@@ -1,0 +1,40 @@
+import sys
+
+switch_num = int(sys.stdin.readline())
+
+switch_list = [i for i in range(switch_num)]
+
+for j in range(switch_num):
+    switch_list[j] = list(map(int, sys.stdin.readline().split()))
+
+print(switch_list)
+# for _ in range(student_num):
+#     student_sex, rand_num = map(int, sys.stdin.readline().split())
+
+#     if student_sex == 1:
+#         for i in range(switch_num):
+#             if switch_list[i][1] % rand_num == 0:
+#                 if switch_list[i][1] == 0:
+#                     switch_list[i][1] = 1
+#                 elif switch_list[i][1] == 1:
+#                     switch_list[i][1] = 0
+
+#     elif student_sex == 2:
+#         tmp = rand_num
+#         if switch_list[tmp][1] == 0:
+#             switch_list[tmp][1] = 1
+#         elif switch_list[tmp][1] == 1:
+#             switch_list[tmp][1] = 0
+
+#         while switch_list[tmp - 1][1] == switch_list[tmp + 1][1]:
+#             if switch_list[tmp - 1][1] == 0:
+#                 switch_list[tmp - 1][1] = 1
+#                 switch_list[tmp + 1][1] = 1
+#             elif switch_list[tmp - 1][1] == 1:
+#                 switch_list[tmp - 1][1] = 0
+#                 switch_list[tmp + 1][1] = 0
+
+#             tmp -= 1
+
+# for i in range(switch_num):
+#     print(switch_list[i][1])

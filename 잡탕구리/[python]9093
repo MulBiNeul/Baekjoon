@@ -1,0 +1,9 @@
+import sys
+
+cnt = int(sys.stdin.readline())
+
+for _ in range(cnt):
+    sentence = sys.stdin.readline().rstrip().split()
+    for word in sentence:
+        print(word[::-1], end=" ")
+    print()
