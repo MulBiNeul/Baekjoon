@@ -6,15 +6,17 @@ N = int(sys.stdin.readline())
 
 # recursive function
 def star(n):
-    if n == 3:
-        return ['***', '* *', '***']
-
-    arr = star(n//3)
-    stars = []
-    for i in arr:
-        stars.append(i*3)
-        for i in arr:
-            stars.append(i + ' '*(n//3) + i)
-    return stars
+    if n == 1:
+        return ['*']
+    stars = star(n//3)
+    L = []
+    for s in stars:
+        L.append(s*3)
+    for s in stars:
+        L.append(s+ ' '*(n//3) + s)
+    for s in stars:
+        L.append(s*3)
+    
+    return L
 
 print('\n'.join(star(N)))
